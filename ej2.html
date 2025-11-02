@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tarea RA2, ejercicio 2</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Ejercicio 2</h1>
+      </header>
+      <nav>
+        <a href="ej1.html">Ejercicio: 1</a>
+        <a href="index.html">Página principal</a>
+        <a href="ej3.html">Ejercicio: 3</a>
+        <a href="ej4.html">Ejercicio: 4</a>
+      </nav>
+
+      <form action="" method="post" class="formulario">
+        <div class="campo">
+          <label for="entrada">Cadena de entrada:</label>
+          <input type="text" id="entrada" name="entrada" required />
+        </div>
+
+        <button type="button" id="transformacion">Transformación</button>
+
+        <div class="campo">
+          <label for="salida">Cadena de salida:</label>
+          <input type="text" id="salida" name="salida" readonly />
+        </div>
+
+        <button type="button" id="clear">Clear</button>
+
+      </form>
+
+      <p>
+        Vamos utilizar nuestros conocimientos de manipulación de cadenas en
+        javascript, para crear un algoritmo de compresión de cadenas. El
+        algoritmo consiste en sustituir rachas de caracteres repetidos por el
+        número de repeticiones seguido del carácter. El algoritmo sólo actúa con
+        cadenas de caracteres del alfabeto, por lo que arrojará un mensaje de
+        error en caso de que la cadena contenga números. Si admite espacios, en
+        cuyo caso se sustituirá el espacio por una interrogación "?". <br />
+        <br />
+        Ejemplos de prueba: <br />
+        <br />
+        Cadena de entrada: "holaaaa mundo" se transforma en "hol4a?mundo" <br />
+        <br />
+        Cadena de entrada: "aaabbcaaaa" se transforma en "3a2bc4a" <br />
+      </p>
+    </main>
+    <footer>Julia Bosianek &copy; 2025</footer>
+    <script src="ej2.js"></script>
+  </body>
+</html>

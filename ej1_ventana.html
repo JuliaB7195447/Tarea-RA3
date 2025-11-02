@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="mensaje"></p>
+
+    <script>
+        // fecha actual
+        const hoy = new Date();
+        const dia = hoy.getDate();
+        const mes = hoy.getMonth() + 1; // Los meses van de 0 a 11, por eso añado +1
+        const anyo = hoy.getFullYear();
+
+        // calculo días hsta fin de año
+        const finDeAnyo = new Date(anyo, 11, 31); // 31 de diciembre del año actual
+        const diferenciaTiempo = finDeAnyo - hoy;
+        const diasRestantes = Math.ceil(diferenciaTiempo / (1000 * 60 * 60 * 24));
+
+        // mensaje en el párrafo
+        document.getElementById("mensaje").textContent = `Hoy es ${dia}/${mes}/${anyo} y faltan ${diasRestantes} días para fin de año`;
+    </script>
+</body>
+</html>
